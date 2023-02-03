@@ -8,7 +8,7 @@ function App() {
     const [active, setActive] = useState("1");
 
     function goToGH() {
-        window.location.href = "https://github.com"
+        window.location.href = "https://github.com/VladimirPapazov88"
     }
 
     return (
