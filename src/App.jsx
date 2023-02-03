@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import { Button, Link } from './Components'
 import { DiGithubBadge } from 'react-icons/di'
+import { Home } from './Home'
 
 function App() {
     const [active, setActive] = useState("1");
@@ -26,7 +27,11 @@ function App() {
                 <Button onClick={goToGH} text={<span className="flex items-center"><DiGithubBadge className="text-2xl mr-1"/> Github</span>}></Button>
             </nav>
 
-            <footer className="fixed bottom-5 items-center w">VladimirPapazov88</footer>
+            <main>
+                <Home />
+            </main>
+
+            <footer className="fixed bottom-5 text-center w-screen">VladimirPapazov88</footer>
         </div>
     )
 }
