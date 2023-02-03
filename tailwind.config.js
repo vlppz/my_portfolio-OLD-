@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      appleemoji: "Apple Color Emoji"
+    }
   },
   plugins: [],
 }

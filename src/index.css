@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Apple Color Emoji";
+    src: url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.eot");
+    src: url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.woff") format("woff"), url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5ab304ade0d4f62d027d12464ca69443.svg#Apple Color Emoji") format("svg");
+}
