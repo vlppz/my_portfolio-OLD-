@@ -1,5 +1,3 @@
-import { Button, Link } from './Components'
-
 function Home() {
     return (
         <main className='pxl-10 pt-5'>
