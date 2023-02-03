@@ -3,6 +3,7 @@ import './App.css';
 import { Button, Link } from './Components'
 import { DiGithubBadge } from 'react-icons/di'
 import { Home } from './Home'
+import { Projects } from './Projects'
 
 function App() {
     const [active, setActive] = useState("1");
@@ -28,7 +29,9 @@ function App() {
             </nav>
 
             <main className="mt-28">
-                <Home />
+                {active === "1" ?
+                    <Home />
+                    : <Projects />}
             </main>
         </div>
     )
