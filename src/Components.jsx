@@ -16,4 +16,16 @@ function Link(props) {
     }
 }
 
-export { Button, Link }
+function Card(props) {
+    return (
+        <div className={props.className + ' bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex flex-row items-center'}>
+            <img width="70rem" className="rounded-lg" src={props.img_src} alt='card img' />
+            <div className="ml-10">
+                <h1 className="text-2xl font-medium">{props.name}</h1>
+                <h3>{props.desc}</h3>
+            </div>
+        </div>
+    )
+}
+
+export { Button, Link, Card }

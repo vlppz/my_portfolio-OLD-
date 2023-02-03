@@ -13,7 +13,7 @@ function App() {
 
     return (
         <div className="h-screen">
-            <nav className="p-5 bg-white text-black flex justify-between items-center">
+            <nav className="p-5 bg-white text-black flex justify-between items-center fixed top-0 w-screen bg-opacity-30 backdrop-blur-md">
                 <p className="text-xl font-bold">My Portfolio</p>
                 <div>
                     {active === "1" ?
@@ -27,11 +27,9 @@ function App() {
                 <Button onClick={goToGH} text={<span className="flex items-center"><DiGithubBadge className="text-2xl mr-1"/> Github</span>}></Button>
             </nav>
 
-            <main>
+            <main className="mt-28">
                 <Home />
             </main>
-
-            <footer className="fixed bottom-5 text-center w-screen">VladimirPapazov88</footer>
         </div>
     )
 }
