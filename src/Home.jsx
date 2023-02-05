@@ -3,7 +3,7 @@ import { Card } from './Components'
 function Home() {
     return (
         <main className='pxl-10 pt-5 pb-10'>
-            <div className='w-screen flex justify-center items-center'>
+            <div className='flex justify-center items-center'>
                 <div className="text-7xl p-4 bg-purple-200 rounded-xl transition-all ease-in-out duration-500 hover:rotate-12">
                     <img src="./hand.png" alt="hand" className="h-20" />
                 </div>
