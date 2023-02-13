@@ -4,4 +4,4 @@
 - [x] React
 - [x] Tailwind css
 
-## Link: https://vladimirpapazov88.netlify.app
+## Link: https://vladimirpapazov88.vercel.app
