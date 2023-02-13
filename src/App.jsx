@@ -13,8 +13,8 @@ function App() {
     }
 
     return (
-        <div className="h-screen">
-            <nav className="p-5 bg-white text-black flex justify-between items-center fixed top-0 w-screen bg-opacity-30 backdrop-blur-md">
+        <div>
+            <nav className="p-5 bg-white text-black flex justify-between items-center fixed top-0 w-screen bg-opacity-30 backdrop-blur-md z-10">
                 <p className="text-xl font-bold">My Portfolio</p>
                 <div>
                     {active === "1" ?

@@ -4,6 +4,12 @@ function Button(props) {
     )
 }
 
+function ButtonSimple(props) {
+    return (
+        <button onClick={props.onClick} className={props.className + ' p-3 rounded-lg text-white hover:bg-gray-800 bg-black transition-all duration-500 ease-in-out transform hover:shadow-2xl'}>{props.text}</button>
+    )
+}
+
 function Link(props) {
     if (props.active) {
         return (
@@ -28,4 +34,16 @@ function Card(props) {
     )
 }
 
-export { Button, Link, Card }
+function CardCustom(props) {
+    return (
+        <div className={props.className + ' bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex flex-row items-center'}>
+            {props.custom}
+            <div className="ml-10">
+                <h1 className="text-2xl font-medium">{props.name}</h1>
+                <h3>{props.desc}</h3>
+            </div>
+        </div>
+    )
+}
+
+export { Button, Link, Card, CardCustom, ButtonSimple }
