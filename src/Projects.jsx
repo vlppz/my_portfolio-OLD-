@@ -11,15 +11,15 @@ function Projects() {
             </div>
             <h1 className="font-light text-4xl text-center mt-4">My projects</h1>
             <div className="ml-32 mr-32 mt-10">
-                <CardCustom name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple text={<DiGithubBadge className="text-4xl" onClick={() => {window.location.href = "https://github.com/VladimirPapazov88/miniurl"}} />} />} />
+                <CardCustom name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/miniurl" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Guitar school site" desc="My first website with a good design. But it's in Russian." custom={<ButtonSimple text={<DiGithubBadge className="text-4xl" onClick={() => {window.location.href = "https://github.com/VladimirPapazov88/guitarschoolsite"}} />} />} />
+                <CardCustom className="mt-10" name="Guitar school site" desc="My first website with a good design. But it's in Russian." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/guitarschoolsite" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="My old portfolio" desc="The first portfolio website that I've ever made. It's in Russian too." custom={<ButtonSimple text={<DiGithubBadge className="text-4xl" onClick={() => {window.location.href = "https://github.com/VladimirPapazov88/my-website-portfolio"}} />} />} />
+                <CardCustom className="mt-10" name="My old portfolio" desc="The first portfolio website that I've ever made. It's in Russian too." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/my-website-portfolio" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Multiuser counter" desc="Multiuser counter written on java spring boot." custom={<ButtonSimple text={<DiGithubBadge className="text-4xl" onClick={() => {window.location.href = "https://github.com/VladimirPapazov88/counter-java"}} />} />} />
+                <CardCustom className="mt-10" name="Multiuser counter" desc="Multiuser counter written on java spring boot." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/counter-java" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Words game" desc="Multiuser words game written in python. It's in Russian." custom={<ButtonSimple text={<DiGithubBadge className="text-4xl" onClick={() => {window.location.href = "https://github.com/VladimirPapazov88/flask_form"}} />} />} />
+                <CardCustom className="mt-10" name="Words game" desc="Multiuser words game written in python. It's in Russian." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/flask_form" }} text={<DiGithubBadge className="text-4xl" />} />} />
             </div>
         </main>
     )
