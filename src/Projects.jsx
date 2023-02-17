@@ -5,7 +5,7 @@ function Projects() {
     return (
         <main className='pxl-10 pb-10'>
             <div className='flex justify-center items-center'>
-                <div className="text-7xl p-4 bg-purple-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:shadow-gray-700 rounded-xl transition-all ease-in-out duration-500 hover:-translate-y-1 hover:shadow-purple-100 hover:shadow-2xl">
+                <div className="text-7xl p-4 bg-purple-200 dark:bg-slate-200 dark:hover:bg-white dark:hover:shadow-gray-700 rounded-xl transition-all ease-in-out duration-500 hover:-translate-y-1 hover:shadow-purple-200 hover:shadow-2xl hover:bg-purple-300">
                     <img src="./work.png" alt="hand" className="h-20" />
                 </div>
             </div>
