@@ -1,15 +1,25 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Button, Link } from './Components'
 import { DiGithubBadge } from 'react-icons/di'
 import { BsFillSunFill, BsFillMoonStarsFill } from 'react-icons/bs'
 import { Home } from './Home'
 import { Projects } from './Projects'
+import Cookies from 'universal-cookie'
 
 function App() {
     const [active, setActive] = useState("1");
     const [dark, setDark] = useState(false);
-    console.log(dark);
+    const cookies = new Cookies();
+
+    /* eslint-disable */
+    useEffect(() => {
+        if (cookies.get("dark") === "true") {
+            setDark(true);
+            switchMode();
+        }
+    }, [])
+    /* eslint-enable */
 
     function goToGH() {
         window.location.href = "https://github.com/VladimirPapazov88"
@@ -18,9 +28,11 @@ function App() {
     function switchMode() {
         if (!dark) {
             document.getElementsByTagName("html")[0].classList.add("dark");
+            cookies.set("dark", "true");
             setDark(true);
         } else {
             document.getElementsByTagName("html")[0].classList.remove("dark");
+            cookies.set("dark", "false");
             setDark(false);
         }
     }
