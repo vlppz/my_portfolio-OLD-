@@ -41,7 +41,7 @@ function App() {
         <div>
             <nav className="p-5 bg-white dark:bg-gray-900 dark:text-gray-300 text-black flex justify-between items-center fixed top-0 w-screen bg-opacity-30 backdrop-blur-md dark:bg-opacity-30 z-10">
                 <p className="text-xl font-bold">My Portfolio</p>
-                <div>
+                <div className='text-center'>
                     {active === "1" ?
                         <Link active={true} className="mr-10" text="Home"></Link>
                         : <Link className="mr-10" onClick={() => { setActive("1") }} text="Home"></Link>}

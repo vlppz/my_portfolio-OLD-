@@ -24,10 +24,10 @@ function Link(props) {
 
 function Card(props) {
     return (
-        <div className={props.className + ' dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:shadow-gray-800 dark:shadow-slate-800 bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex flex-row items-center'}>
+        <div className={props.className + ' dark:bg-gray-700 dark:hover:bg-gray-600 dark:hover:shadow-gray-800 dark:shadow-slate-800 bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex sm:flex-row flex-col items-center'}>
             <img width="70rem" className="rounded-lg" src={props.img_src} alt='card img' />
-            <div className="ml-10">
-                <h1 className="text-2xl font-medium dark:text-gray-300">{props.name}</h1>
+            <div className="mt-3 sm:mt-0 sm:ml-10">
+                <h1 className="text-2xl font-medium dark:text-gray-300 text-center sm:text-left">{props.name}</h1>
                 <h3 className="dark:text-gray-300">{props.desc}</h3>
             </div>
         </div>
@@ -36,9 +36,9 @@ function Card(props) {
 
 function CardCustom(props) {
     return (
-        <div className={props.className + ' dark:bg-gray-700 dark:hover:bg-gray-600 dark:shadow-slate-800 dark:hover:shadow-gray-800 bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex flex-row items-center'}>
+        <div className={props.className + ' dark:bg-gray-700 dark:hover:bg-gray-600 dark:shadow-slate-800 dark:hover:shadow-gray-800 bg-gray-100 rounded-lg p-7 shadow-md hover:shadow-xl hover:bg-gray-200 hover:bg-opacity-70 transition-all ease-in-out duration-500 flex flex-col sm:flex-row items-center'}>
             {props.custom}
-            <div className="ml-10">
+            <div className="ml-10 mt-2 sm:mt-0">
                 <h1 className="text-2xl font-medium dark:text-gray-300">{props.name}</h1>
                 <h3 className="dark:text-gray-300">{props.desc}</h3>
             </div>

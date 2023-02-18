@@ -10,7 +10,7 @@ function Projects() {
                 </div>
             </div>
             <h1 className="font-light text-4xl text-center mt-4 dark:text-gray-300">My projects</h1>
-            <div className="ml-32 mr-32 mt-10">
+            <div className="ml-10 mr-10 sm:ml-32 sm:mr-32 mt-10">
                 <CardCustom name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/miniurl" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
                 <CardCustom className="mt-10" name="Guitar school site" desc="My first website with a good design. But it's in Russian." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/guitarschoolsite" }} text={<DiGithubBadge className="text-4xl" />} />} />
