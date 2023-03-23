@@ -28,11 +28,11 @@ function App() {
     function switchMode() {
         if (!dark) {
             document.getElementsByTagName("html")[0].classList.add("dark");
-            cookies.set("dark", "true");
+            cookies.set("dark", "true", { maxAge: 31536000 });
             setDark(true);
         } else {
             document.getElementsByTagName("html")[0].classList.remove("dark");
-            cookies.set("dark", "false");
+            cookies.set("dark", "false", { maxAge: 31536000 });
             setDark(false);
         }
     }
