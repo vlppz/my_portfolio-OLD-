@@ -9,7 +9,7 @@ function Home() {
                 </div>
             </div>
             <h1 className="font-light text-4xl text-center mt-4 dark:text-gray-300">Hello, my name is Vladimir!</h1>
-            <p className="text-xl text-center mt-3 font-light dark:text-gray-300">I live in Moscow, and I like to be a frontend developer.<br />I've done some projects and you can see them in this portfolio.</p>
+            <p className="text-xl text-center mt-3 font-light dark:text-gray-300">I'm fullstack developer from Moscow.</p>
             <h1 className="text-2xl text-center mt-10 dark:text-gray-300">My favourite tools:</h1>
             <div className='flex items-center justify-center mt-5 flex-col'>
                 <Card name="React" desc="Library for web and native user interfaces that lets you build user interfaces out of individual pieces called components." className="w-3/4 sm:w-2/4" img_src="/react.svg" />
