@@ -11,11 +11,13 @@ function Projects() {
             </div>
             <h1 className="font-light text-4xl text-center mt-4 dark:text-gray-300">My projects</h1>
             <div className="ml-10 mr-10 sm:ml-32 sm:mr-32 mt-10">
-                <CardCustom name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/miniurl" }} text={<DiGithubBadge className="text-4xl" />} />} />
+                <CardCustom name="Silaeder Conference" desc="Web-service for my school that helps to organize conferences with tools like automatic schedule creation, presentation shower, etc." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/silaedr-info/silaeder-conference" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Words game" desc={<span>Multiuser words game written in python. It's in Russian.</span>} custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/flask_form" }} text={<DiGithubBadge className="text-4xl" />} />} />
+                <CardCustom className="mt-10" name="Youlist" desc="An website that enables you to create and share lists of Youtube videos." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/youlist" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Silaeder Conference" desc={<span>Web-service for my school that helps to organize conferences with tools like automatic schedule creation, presentation shower, etc.</span>} custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/silaedr-info/silaeder-conference" }} text={<DiGithubBadge className="text-4xl" />} />} />
+                <CardCustom className="mt-10" name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/miniurl" }} text={<DiGithubBadge className="text-4xl" />} />} />
+
+                <CardCustom className="mt-10" name="Words game" desc="Multiuser words game written in python." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/flask_form" }} text={<DiGithubBadge className="text-4xl" />} />} />
             </div>
         </main>
     )
