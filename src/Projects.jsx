@@ -13,13 +13,9 @@ function Projects() {
             <div className="ml-10 mr-10 sm:ml-32 sm:mr-32 mt-10">
                 <CardCustom name="URL Shortener" desc="A simple url shortener written in python, and it uses sqlite3 as a database." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/miniurl" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="Guitar school site" desc="My first website with a good design. But it's in Russian." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/guitarschoolsite" }} text={<DiGithubBadge className="text-4xl" />} />} />
+                <CardCustom className="mt-10" name="Words game" desc={<span>Multiuser words game written in python. It's in Russian.</span>} custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/flask_form" }} text={<DiGithubBadge className="text-4xl" />} />} />
 
-                <CardCustom className="mt-10" name="My old portfolio" desc="The first portfolio website that I've ever made. It's in Russian too." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/my-website-portfolio" }} text={<DiGithubBadge className="text-4xl" />} />} />
-
-                <CardCustom className="mt-10" name="Multiuser counter" desc="Multiuser counter written on java spring boot." custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/counter-java" }} text={<DiGithubBadge className="text-4xl" />} />} />
-
-                <CardCustom className="mt-10" name="Words game" desc={<span>Multiuser words game written in python. It's in Russian. <a className='transition-all duration-500 dark:text-blue-200 dark:hover:text-blue-400 hover:text-blue-900 text-blue-700' href="https://github.com/maxtaran2010">Max</a> helped me with this one.</span>} custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/VladimirPapazov88/flask_form" }} text={<DiGithubBadge className="text-4xl" />} />} />
+                <CardCustom className="mt-10" name="Silaeder Conference" desc={<span>Web-service for my school that helps to organize conferences with tools like automatic schedule creation, presentation shower, etc.</span>} custom={<ButtonSimple onClick={() => { window.location.href = "https://github.com/silaedr-info/silaeder-conference" }} text={<DiGithubBadge className="text-4xl" />} />} />
             </div>
         </main>
     )
